@@ -104,7 +104,7 @@ class Api::V1::Accounts::ContactsController < Api::V1::Accounts::BaseController
   end
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :phone_number, additional_attributes: {}, custom_attributes: {})
+    params.require(:contact).permit(:name, :email, :phone_number,:thumbnail, additional_attributes: {}, custom_attributes: {})
   end
 
   def contact_custom_attributes
